@@ -7,14 +7,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div class="navbar navbar-inverse">
-		<div class="navbar-static-top">
-			<div class="container">
-				<a href="#" class="brand"> Family</a>
+  <div class="navbar navbar-inverse">
 				<ul class="nav">
 					<li><%= link_to "All Stories", feed_path %></li>
 				</ul>
-				<ul class="nav pull-right">
+				<ul class="nav navbar-nav">
 					<% if user_signed_in? %>
 						<li><%= link_to current_user.full_name, edit_user_registration_path %></li>
 						<li><%= link_to "Log Out", logout_path %><li>
@@ -24,9 +21,9 @@
 					<% end %>
 
 				</ul>
-			</div>
-		</div>
+			
 	</div>
+</div>
 	<div class="container">
 		<% flash.each do |type, message| %>
 			<div class="alert <%= flash_class type %>">

@@ -27,9 +27,8 @@ body {
 
   
 }
-.brand {
-  
-  font-size: 28px;
+.navbar-brand {
+  font-size: 100px;
   text-align: center;
 }
 
@@ -37,9 +36,14 @@ body {
 
 .navbar .nav > li > a {
   float: none;
-  color: black;
-  background-color: beige;
+  color: white;
   
+}
+.nav {
+  font-size: 32px;
+}
+.navbar-header{
+  font-size: 48px;
 }
 
 
